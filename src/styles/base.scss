@@ -1,5 +1,5 @@
 body {
-  @apply font-primary text-text bg-background
+  @apply font-primary text-text bg-background bg-[url(/images/bg.svg)] bg-cover bg-repeat;
 }
 .dark body {
 
