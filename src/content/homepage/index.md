@@ -5,7 +5,7 @@ banner:
   title: 'La <span class="text-accent text-shadow-[0px_5px_15px] shadow-accent/10">La Inteligencia Artificial</span>  aplicada al aprendizaje como soporte para personas con <span class="text-secondary"> discapacidad</span>'
   title_size: "text-4xl md:text-5xl"
   content: "Esteban Ayala Peña"  
-  image: /images/logo_v5_xl_pfp.webp
+  image: /images/ia-discapacidad.png
   buttons:
     - label: Marco teorico
       href: "https://github.com/diego-alfadev/alfadev-astro-starter"

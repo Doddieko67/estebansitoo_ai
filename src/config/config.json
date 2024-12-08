@@ -4,10 +4,10 @@
     "base_url": "https://astro-starter.alfadev.io",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.ico",
+    "favicon": "/images/ia-discapacidad.ico",
     "logo": "/images/ia-discapacidad.png",
-    "logo_width": "47",
-    "logo_height": "47",
+    "logo_width": "70",
+    "logo_height": "70",
     "logo_text": "Proyecto Aula"
   },
 
@@ -22,7 +22,7 @@
 
   "metadata": {
     "meta_author": "alfadev",
-    "meta_image": "/images/logo.png",
+    "meta_image": "/images/ia-discapacidad.png",
     "meta_description": "alfadev-astro-starter is a starter template for Astro, the modern static site generator for the modern web.",
     "meta_keywords": ["astro", "Astro Starter", "alfadev", "Diego Alfaro Sáez", "static site generator", "modern web", "astro template"],
     "meta_application_name": "alfadev-astro-starter"
