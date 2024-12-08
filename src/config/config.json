@@ -1,14 +1,14 @@
 {
   "site": {
-    "title": "alfadev-astro-starter",
+    "title": "Proyecto Aula",
     "base_url": "https://astro-starter.alfadev.io",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.ico",
-    "logo": "/images/logo.png",
+    "logo": "/images/ia-discapacidad.png",
     "logo_width": "47",
     "logo_height": "47",
-    "logo_text": "alfadev-astro-starter"
+    "logo_text": "Proyecto Aula"
   },
 
   "params": {
