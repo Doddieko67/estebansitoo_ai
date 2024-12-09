@@ -14,64 +14,64 @@ banner:
       addClasses: "w-full bg-gray-900 text-white hover:bg-accent dark:border-white/10 dark:border"
 
 sections:
-  - title: Tired of writing the same code over and over again?
-    content: "We've all been there... Setting up the same SEO, theming, and responsive layout boilerplate again and again. Say goodbye to that! <b class='text-accent'>alfadev-astro-starter</b> lets you jump straight into creating, skipping the repetitive groundwork."
-    image: /images/tired-of-writing.webp
+  - title: Que es la Inteligencia Artificial?
+    content: La Inteligencia Artificial (IA) es un campo de la informática que busca desarrollar sistemas capaces de realizar tareas que requieren inteligencia humana, como la percepción, el razonamiento, el aprendizaje y la toma de decisiones. A través de diversas tecnologías, la IA permite a las máquinas "aprender" de los datos, adaptarse a diferentes contextos y realizar tareas complejas de manera autónoma.
+    image: https://mediatek-marketing.transforms.svdcdn.com/production/posts/MediaTek-IA-2023.jpg?w=2048&h=1075&q=80&auto=format&fit=crop&dm=1688130337&s=3b56535c28f441a34db9455d64444cb7
 
-  - title: This is not a library
-    content: It's a <b class='text-accent'>ready-to-go template</b>. No steep learning curves or dozens of new dependencies. Just the essentials to build content-driven pages with ease.<br/>If you're familiar with <span class="text-accent font-bold">Astro</span>, you are good to go.
-    image: /images/this-is-not-a-library.webp
+  - title: El Rol de la IA en la Educación Inclusiva
+    content: La IA está desempeñando un papel clave en la educación inclusiva, al permitir que las personas con diversas discapacidades tengan acceso a oportunidades de aprendizaje que antes podrían haber sido inaccesibles. La educación inclusiva busca integrar a todos los estudiantes, independientemente de sus habilidades o discapacidades, en el mismo entorno educativo, y la IA facilita esta inclusión al proporcionar herramientas personalizadas que se adaptan a las necesidades específicas de cada alumno.
+    image: https://imgs.search.brave.com/geOF1q6GnTArf95wGq5R4n0mLJ6GlrOOjVlI951VsBs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ibG9n/cy51b2MuZWR1L2Vw/Y2Uvd3AtY29udGVu/dC91cGxvYWRzL3Np/dGVzLzE1OS8yMDIz/LzAyL2VkdWNhY2lv/bi1pbmNsdXNpdmEt/MS03Njh4NTIzLmpw/Zw
 
-  - title: Optimized out of the box
-    content: Lightweight and fast. Packed with <span class="text-accent font-bold">Astro</span>, <span class="text-[#38bdf8] font-bold">tailwind</span> and <span class="text-[#e41c81] font-bold">Sass</span> goodness, so your pages load <b class='text-accent'>blazing fast</b>—right from the start. <br/> All the pages are configured in a way that are SEO-friendly and defined with markdown.
-    image: /images/optimized-out-of-the-box.webp
+  - title: Impacto en el Acceso y la Participación
+    content: El uso de la IA en el ámbito educativo ha abierto nuevas puertas para mejorar el acceso a los contenidos, la participación en las actividades académicas y la interacción social entre los estudiantes. Gracias a herramientas impulsadas por IA, los estudiantes con discapacidades pueden disfrutar de un entorno de aprendizaje más accesible y participativo. La IA elimina barreras tradicionales, como la falta de materiales adaptados o el acceso limitado a métodos de enseñanza especializados.
+    image: https://innovacion.uas.edu.mx/wp-content/uploads/2023/08/las-preguntas-mas-frecuentes-sobre-la-realidad-virtual-y-la-inteligencia-artificial.jpg
 
-  - title: Looks great, day or night
-    content: "With <b class='text-accent'>built-in dark theme support</b>, your site will look amazing no matter what time of day your users visit. Or what their eyes prefer.<br/> <br/>Forget convoluted theming systems. alfadev-astro-starter keeps it <b class='text-accent'>simple and extensible</b>, so you can focus on your design and let the code work fori you."
-    image: /images/loogs-good.webp
+  - title: El Futuro de la IA en la Educación Inclusiva
+    content: El futuro de la IA en la educación inclusiva es extremadamente prometedor. Se espera que en los próximos años las herramientas basadas en IA continúen evolucionando, ofreciendo experiencias de aprendizaje aún más personalizadas y adaptativas. Las plataformas de aprendizaje autónomas y los sistemas de asistencia inteligente tienen el potencial de transformar el acceso a la educación, permitiendo que todos los estudiantes, independientemente de sus habilidades o discapacidades, reciban la enseñanza que necesitan para alcanzar su máximo potencial.
+    image: https://cdn.milenio.com/uploads/media/2020/02/25/exigen-la-intervencion-de-autoridades.jpg
 
 
 ##key features
 features:
-  title: Why <span class="text-accent">alfadev-starter</span>?
-  description: Because every content-driven page needs a lot boilerplate to initialize, and **we provide you with the tools and guidelines** needed to focus on what's important.
+  title: Aplicaciones de la <span class="text-accent">IA</span>
+  description: Quita esto fidel xD
   feature_list:
     - icon: "box"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Simple
-      content: Avoid Complexity, small yet not useless. Loaded, but <b class="text-text">not overwhelming</b>.
+      title: Personalización
+      content: Adaptación del contenido a cada estudiante. 
     - icon: "clock"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Up-to-date
-      content: Using the latest version and best practices of <span class="text-accent font-bold">Astro</span>, <span class="text-[#38bdf8] font-bold">tailwindcss</span> and <span class="text-[#e41c81] font-bold">Sass</span>
+      title: Accesibilidad
+      content: Uso de herramientas como lectores de pantalla y voz.
     - icon: "search"  #icon package react-feather-icon [https://feathericons.com/]
-      title: SEO Friendly
-      content: Boost your site's visibility with <b class="text-text">built-in SEO optimizations</b>, including automatic sitemap generation using <a target='blank' href="https://docs.astro.build/es/guides/integrations-guide/sitemap/"><span class="text-accent font-bold underline">astrojs/sitemap</span></a>.
+      title: Autonomía
+      content: Mejora la independencia de los estudiantes.
     - icon: "plus"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Extendable
-      content: Add or change content just by <b class="text-text">editing markdown files</b>, so it stays in one place regardless of the code.
+      title: Evaluación Continua
+      content: Monitoreo del progreso de manera constante.
     - icon: "coffee"  #icon package react-feather-icon [https://feathericons.com/]
-      title: "Focused"
-      content: Put you effort on what's important, not on small details. Dont worry about <span class="text-shadow-sm shadow-surface-contrast">***that damn shadow***</span>.
+      title: Inclusión Social
+      content: Promueve la interacción entre estudiantes con y sin discapacidad.
     - icon: "tool"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Customizable
-      content: Every corner of the page <b class="text-text">can be easily changed</b> to fit your needs.
+      title: Entornos Interactivos
+      content: Crea espacios de aprendizaje más dinámicos y atractivos.
     - icon: "moon"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Dark Mode Support
-      content: Fully supports ***dark theme*** with an easy-to-extend theming system.
+      title: Ligereza
+      content: Mejora la velocidad de carga y rendimiento del sistema.
     - icon: "feather"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Lightweight
-      content: Fast and efficient. Every asset is optimized to ensure <b class="text-text">minimal load times</b>.
+      title: Modularidad
+      content: Facilita modificaciones y actualizaciones rápidas.
     - icon: "layers"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Modular
-      content: Built with ***reusable components*** that simplify adding or editing sections of the page.
+      title: Rendimiento
+      content: Optimización del sistema para una experiencia de usuario más fluida.
     - icon: "zap"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Performance-First
-      content: Designed with <b class="text-text">best-in-class performance</b> metrics to improve the user experience.
+      title: Contenido Centrado
+      content: Perfecto para portafolios o páginas de aterrizaje educativas.
     - icon: "layout"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Content-Centric
-      content: Focused on delivering content seamlessly, making it ideal for <b class="text-text">portfolios, showcases, or landing pages</b>.
+      title: Modo Personalizable
+      content: Adapta el tema según las preferencias del usuario.
     - icon: "code"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Developer-Friendly
-      content: Crafted for developers who value ***simplicity, flexibility, and modern*** tools.
+      title: Amigable para Desarrolladores
+      content: Herramientas que facilitan la creación y personalización
     
 
 
@@ -79,48 +79,47 @@ features:
 
 #testimonial
 testimonial:
-  title: Our adopters and their clients <ins>have nice things to say</ins> about us
-  description: Or they will, once they taste a drop of **what we've built**
+  title: Retos y Desafios que Enfreta la IA
+  description: hay que qutiar esto xD
   testimonial_list:
-    - author: Jhon Doe
-      organization: Example Corp
-      rating: five
-      content: "I can't believe this testimonial is autogenerated! But hey, I’d still give it <b class='text-accent'>five stars</b>!"
-    - author: Jane D. Smith
-      organization: Acme Inc.
+    - author: Privacidad y manejo de datos
+      organization: Proteccion de datos
+      content: La necesidad de establecer normas claras sobre la recolección, almacenamiento y uso de los datos personales para evitar violaciones de privacidad.
+    - author: Acceso desigual a la tecnología
+      organization: Desigualdad Digital y Acceso a Tecnología
       rating: four
-      content: "Doesn't matter if I exist or not, this project is <b class='text-accent'>truly fantastic</b>. Highly recommend!"
-    - author: Bob A. Nonymous
-      organization: FutureTech Labs
+      content: "Desafíos relacionados con la distribución desigual de la infraestructura tecnológica que limita el acceso a IA en diversas regiones."
+    - author: Sesgos en los algoritmos
+      organization: Ética en IA y Justicia Algorítmica
       rating: five
-      content: "Wow, this is so good, I’d recommend it to all my imaginary friends."
-    - author: Alice Placeholder
-      organization: Startup Ipsum
+      content: "Cómo los algoritmos de IA pueden perpetuar sesgos existentes en los datos y cómo esto puede afectar decisiones en áreas críticas."
+    - author: Transparencia y explicabilidad
+      organization: Explicabilidad y Transparencia en IA
       rating: three
-      content: "If I were real, I’d definitely complain less. But it’s still pretty good!"
-    - author: Richard Fakenham
-      organization: Lorem Ipsum Ltd.
+      content: "La dificultad de entender cómo los modelos de IA toman decisiones, especialmente en aplicaciones críticas como la medicina y la justicia."
+    - author: Impacto en el empleo
+      organization: Economía y Futuro del Trabajo
       rating: five
-      content: "Astounding! Even for a made-up person like me, this template <b class='text-accent'>exceeds expectations</b>."
-    - author: Emily Mockson
-      organization: Phantom Co.
+      content: "El efecto de la automatización de la IA en el mercado laboral y los posibles desplazamientos de trabajo, además de cómo adaptarse a esta transición."
+    - author: Seguridad y control
+      organization: Ciberseguridad y Control de Sistemas
       rating: four
-      content: "No real user said this, but they should! Such a slick and modern experience."
-    - author: Alex Testworth
-      organization: AlphaBeta Agency
+      content: "Los riesgos de seguridad asociados con la IA, como la manipulación o el mal uso de los sistemas de IA en sectores sensibles"
+    - author: Desafíos éticos en la toma de decisiones
+      organization: Ética y Filosofía de la IA
       rating: five
-      content: "Best autogenerated testimonial I’ve ever seen. 10/10 would fake it again."
-    - author: Chris Placeholder
+      content: "La necesidad de asegurar que los sistemas de IA actúen de manera ética, especialmente cuando se les otorgan funciones de toma de decisiones en lugar de humanos."
+    - author: Falta de regulación
       # avatar: "/images/users/user-8.png"
-      organization: Ghost Design Studios
+      organization: Legislación y Políticas Públicas en IA
       rating: four
-      content: "You don’t have to believe me, but you should believe in this product!"
+      content: "La ausencia de marcos regulatorios adecuados que cubran la rápida evolución de la IA y los posibles impactos de su uso."
 
 
 ## Call to Action
 call_to_action:
-  title: "Because we love <span class='text-accent text-shadow-[0px_5px_15px]' >Astro</span> and <span class='text-[#38bdf8] text-shadow-[0px_5px_15px]'>Tailwind</span>."
-  description: "Save yourself some time (and sanity). Use this template and act like you planned everything from scratch. We won't tell. **Just be sure to leave a star, please.**"
+  title: "Aqui la neta nose que poner, el link a la diapositiva? XD."
+  description: "lorem"
   button: 
     label: "Grab the Starter"
     href: "https://github.com/diego-alfadev/alfadev-astro-starter"

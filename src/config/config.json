@@ -12,10 +12,10 @@
   },
 
   "params": {
-    "footer_description": "Building cool things, one line of code (and a lot of coffee) at a time. Got questions? Or just bored? Reach out!",
-    "email": "diego.alfadev@gmail.com",
-    "location": "Somewhere on Earth, where the Wi-Fi is decent and the coffee is strong.",
-    "phone": "+704-555-0127 (but let's be honest, email is faster)",
+    "footer_description": "Instituto Politecnico Nacional",
+    "email": "Aqui pon tu correo ",
+    "location": "Somos del Cecyt3",
+    "phone": "y aqui pon tu celular",
     "contact_form_action": "#",
     "copyright": "Copyright © 2023 proudly crafted by [AlfaDev](https://github.com/diego-alfadev)"
 },

@@ -9,28 +9,13 @@
       "url": "/features"
     },
     {
-      "name": "Aplicaciones",
-      "url": "/theme"
-    },
-    {
       "name": "Beneficio",
-      "url": "/about"
-    },
-    {
-      "name": "Retos y Desafios",
-      "url": "/about"
-    },
-    {
-      "name": "Contacto",
       "url": "/about"
     }
   ],
 
   "footer": [
-    {
-      "name": "About",
-      "url": "/about"
-    },
+
     {
       "name": "Changelog",
       "url": "/changelog"
