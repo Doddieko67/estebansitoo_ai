@@ -17,9 +17,9 @@ const HomapageFeature = ({ feature_list }) => {
                 <span className="icon">
                 <FeatherIcon />
                 </span>
-                <h3 className="ml-2 break-all text-sm md:text-lg">{item.title}</h3>
+                <h3 className="ml-2 break-words text-sm md:text-lg">{item.title}</h3>
               </div>
-              <p dangerouslySetInnerHTML={{__html: markdownify(item.content)}}></p>
+              <p className="break-words" dangerouslySetInnerHTML={{__html: markdownify(item.content)}}></p>
             </div>
           </div>
         );

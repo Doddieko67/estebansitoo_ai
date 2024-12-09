@@ -15,6 +15,9 @@ const TestimonialSlider = ({ list }) => {
   return (
     <div className="reviews-carousel relative">
       <Swiper
+        grid={{
+          rows: "auto", // Deja que las filas se ajusten automáticamente
+        }}
         pagination={{
           type: "bullets",
           el: paginationRef.current,
@@ -24,6 +27,8 @@ const TestimonialSlider = ({ list }) => {
         onSwiper={(swiper) => {
           setSwiper(swiper);
         }}
+        centeredSlides={true}
+        spaceBetween={20} 
         // loop={true}
         modules={[Pagination, Autoplay]}
         slidesPerView={1}
@@ -37,7 +42,7 @@ const TestimonialSlider = ({ list }) => {
         }}
       >
         {list.map((item, i) => (
-          <SwiperSlide key={"feature-" + i}>
+          <SwiperSlide key={"feature-" + i} className="swiper-slide-active:scale-150" >
             <div className="review">
               <div className="review-author-avatar bg-gradient">
                 <img src={item.avatar} alt="" />
@@ -45,15 +50,7 @@ const TestimonialSlider = ({ list }) => {
               <h4 className="mb-2">{item.author}</h4>
               <p className="mb-4 text-[#666]">{item.organization}</p>
               <p dangerouslySetInnerHTML={{__html: markdownify(item.content)}}/>
-              <div
-                className={`review-rating mt-6 flex items-center justify-center space-x-2.5 ${item.rating}  `}
-              >
-                <Star />
-                <Star />
-                <Star />
-                <Star />
-                <Star />
-              </div>
+              
             </div>
           </SwiperSlide>
         ))}
@@ -61,8 +58,9 @@ const TestimonialSlider = ({ list }) => {
       <div className="relative flex justify-center">
         <div
           width="100%"
-          className="swiper-pagination reviews-carousel-pagination !bottom-0"
-          style={{ width: "100%" }}
+          
+          className="swiper-pagination reviews-carousel-pagination !bottom-0 bg-red"
+          style={{ width: "150%" }}
           ref={paginationRef}
         ></div>
       </div>

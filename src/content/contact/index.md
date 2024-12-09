@@ -1,5 +1,5 @@
 ---
-document_title: Contact
+document_title: Contacto
 meta_description: "Get in touch with me. Id'd love to hear from you."
 meta_keywords: "astro, alfadev, starter, contact, linkedin, Diego Alfaro Saez"
 

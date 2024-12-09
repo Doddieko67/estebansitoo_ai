@@ -1,30 +1,31 @@
 ---
 # Does not contain meta customizations because it is the homepage and config is already set in the config file
+document_title: "Inicio"
 
 banner:
-  title: 'La <span class="text-accent text-shadow-[0px_5px_15px] shadow-accent/10">La Inteligencia Artificial</span>  aplicada al aprendizaje como soporte para personas con <span class="text-secondary"> discapacidad</span>'
+  title: 'La <span class="text-accent shadow-accent/10">La Inteligencia Artificial</span>  aplicada al aprendizaje como soporte para personas con <span class="text-secondary"> discapacidad</span>'
   title_size: "text-4xl md:text-5xl"
   content: "Esteban Ayala Peña"  
   image: /images/ia-discapacidad.png
   buttons:
     - label: Marco teorico
-      href: "https://github.com/diego-alfadev/alfadev-astro-starter"
+      href: "/marco_teorico.pdf"
       target: "_blank"
-      icon: _Twitter
+      icon: null
       addClasses: "w-full bg-gray-900 text-white hover:bg-accent dark:border-white/10 dark:border"
 
 sections:
-  - title: Que es la Inteligencia Artificial?
+  - title: ¿Qué es la Inteligencia Artificial?
     content: La Inteligencia Artificial (IA) es un campo de la informática que busca desarrollar sistemas capaces de realizar tareas que requieren inteligencia humana, como la percepción, el razonamiento, el aprendizaje y la toma de decisiones. A través de diversas tecnologías, la IA permite a las máquinas "aprender" de los datos, adaptarse a diferentes contextos y realizar tareas complejas de manera autónoma.
-    image: https://mediatek-marketing.transforms.svdcdn.com/production/posts/MediaTek-IA-2023.jpg?w=2048&h=1075&q=80&auto=format&fit=crop&dm=1688130337&s=3b56535c28f441a34db9455d64444cb7
+    image: /images/ai-image8.png
 
   - title: El Rol de la IA en la Educación Inclusiva
     content: La IA está desempeñando un papel clave en la educación inclusiva, al permitir que las personas con diversas discapacidades tengan acceso a oportunidades de aprendizaje que antes podrían haber sido inaccesibles. La educación inclusiva busca integrar a todos los estudiantes, independientemente de sus habilidades o discapacidades, en el mismo entorno educativo, y la IA facilita esta inclusión al proporcionar herramientas personalizadas que se adaptan a las necesidades específicas de cada alumno.
-    image: https://imgs.search.brave.com/geOF1q6GnTArf95wGq5R4n0mLJ6GlrOOjVlI951VsBs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ibG9n/cy51b2MuZWR1L2Vw/Y2Uvd3AtY29udGVu/dC91cGxvYWRzL3Np/dGVzLzE1OS8yMDIz/LzAyL2VkdWNhY2lv/bi1pbmNsdXNpdmEt/MS03Njh4NTIzLmpw/Zw
+    image: /images/ai-image5.png
 
   - title: Impacto en el Acceso y la Participación
     content: El uso de la IA en el ámbito educativo ha abierto nuevas puertas para mejorar el acceso a los contenidos, la participación en las actividades académicas y la interacción social entre los estudiantes. Gracias a herramientas impulsadas por IA, los estudiantes con discapacidades pueden disfrutar de un entorno de aprendizaje más accesible y participativo. La IA elimina barreras tradicionales, como la falta de materiales adaptados o el acceso limitado a métodos de enseñanza especializados.
-    image: https://innovacion.uas.edu.mx/wp-content/uploads/2023/08/las-preguntas-mas-frecuentes-sobre-la-realidad-virtual-y-la-inteligencia-artificial.jpg
+    image: /images/ai-image3.png
 
   - title: El Futuro de la IA en la Educación Inclusiva
     content: El futuro de la IA en la educación inclusiva es extremadamente prometedor. Se espera que en los próximos años las herramientas basadas en IA continúen evolucionando, ofreciendo experiencias de aprendizaje aún más personalizadas y adaptativas. Las plataformas de aprendizaje autónomas y los sistemas de asistencia inteligente tienen el potencial de transformar el acceso a la educación, permitiendo que todos los estudiantes, independientemente de sus habilidades o discapacidades, reciban la enseñanza que necesitan para alcanzar su máximo potencial.
@@ -34,7 +35,7 @@ sections:
 ##key features
 features:
   title: Aplicaciones de la <span class="text-accent">IA</span>
-  description: Quita esto fidel xD
+  description: nmms, fa chilla
   feature_list:
     - icon: "box"  #icon package react-feather-icon [https://feathericons.com/]
       title: Personalización
@@ -72,15 +73,10 @@ features:
     - icon: "code"  #icon package react-feather-icon [https://feathericons.com/]
       title: Amigable para Desarrolladores
       content: Herramientas que facilitan la creación y personalización
-    
-
-
-
 
 #testimonial
 testimonial:
-  title: Retos y Desafios que Enfreta la IA
-  description: hay que qutiar esto xD
+  title: <span class="text-accent text-[0px_5px_15px] shadow-accent/10">Retos y Desafios</span> de la IA
   testimonial_list:
     - author: Privacidad y manejo de datos
       organization: Proteccion de datos

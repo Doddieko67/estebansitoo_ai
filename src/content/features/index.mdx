@@ -1,9 +1,9 @@
 ---
-document_title: "Fundamentos de la Inteligencia Artificial"
+document_title: "Fundamentos"
 meta_description: "Explora las bases tecnológicas que hacen posible la Inteligencia Artificial en la educación inclusiva."
-meta_keywords: "inteligencia artificial, educación inclusiva, fundamentos IA, tecnologías IA"
+meta_keywords: "Inteligencia artificial, educación inclusiva, fundamentos IA, tecnologías IA"
 
-title: "Fundamentos de la Inteligencia Artificial"
+title: "Fundamentos"
 description: "Conoce las tecnologías fundamentales que hacen posible la Inteligencia Artificial y su aplicación en la educación inclusiva."
 ---
 
@@ -79,7 +79,7 @@ description: "Conoce las tecnologías fundamentales que hacen posible la Intelig
   }}
 />
 
-<div class="row mb-10 lg:mb-20">
+<div class="flex justify-center mb-10 lg:mb-20">
   <div class="col-12 md:col-6 text-sm py-2">
       ```ts
       export interface IAComponent {
@@ -105,19 +105,6 @@ description: "Conoce las tecnologías fundamentales que hacen posible la Intelig
       ];
       ```
   </div>
-  <div class="col-12 md:col-6 text-sm py-2">
-        ```ts
-        const aiApplications = defineCollection({
-          type: "content",
-          schema: z.object({
-            title: z.string(),
-            description: z.string(),
-            technology: z.string(),
-            application: z.string(),
-          }),
-        });
-        ```
-  </div>
 </div>
 
 <Section
@@ -126,36 +113,3 @@ description: "Conoce las tecnologías fundamentales que hacen posible la Intelig
     content: "Las tecnologías de IA facilitan la inclusión educativa mediante la adaptación de los recursos a las necesidades de cada estudiante, ya sea ajustando el contenido visual, auditivo o interactivo según la discapacidad. <br/><br/> Esto se logra con tecnologías como la IA en lectores de pantalla, traducción de texto a voz, y sistemas de recomendación que personalizan el aprendizaje.",
   }}
 />
-
-<div class="row mb-10 lg:mb-20">
-  <div class="col-12 md:col-6 text-sm p-4 md:p-1">
-    ```scss
-      // @/styles/theme.scss
-
-      $default: (
-        "primary": #007acc,
-        "secondary": #38bdf8,
-        "accent": #fcb32c,
-        "background": #f9f9f9,
-        "text": #2a2a2a,
-      );
-
-      $dark: (
-        "primary": #1164a3,
-        "secondary": #199AFC,
-        "accent": #ff5a02,
-        "background": #141414,
-        "text": #ffffff,
-      );
-    ```
-  </div>
-  <div class="col-12 md:col-6 content-center">
-    <div class="container grid md:grid-cols-6 grid-cols-3 gap-2">
-      <div class="w-16 h-16 rounded shadow-md shadow-background-contrast/20 bg-primary"></div>
-      <div class="w-16 h-16 rounded shadow-md shadow-background-contrast/20 bg-secondary"></div>
-      <div class="w-16 h-16 rounded shadow-md shadow-background-contrast/20 bg-accent"></div>
-      <div class="w-16 h-16 rounded shadow-md shadow-background-contrast/20 bg-background"></div>
-      <div class="w-16 h-16 rounded shadow-md shadow-background-contrast/20 bg-text"></div>
-    </div>
-  </div>
-</div>

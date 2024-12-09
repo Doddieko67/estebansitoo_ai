@@ -6,19 +6,11 @@
     },
     {
       "name": "Fundamento",
-      "url": "/features"
+      "url": "/fundamentos"
     },
     {
-      "name": "Beneficio",
-      "url": "/about"
-    }
-  ],
-
-  "footer": [
-
-    {
-      "name": "Changelog",
-      "url": "/changelog"
+      "name": "Beneficios",
+      "url": "/beneficios"
     }
   ]
 }

@@ -12,12 +12,12 @@
   },
 
   "params": {
-    "footer_description": "Instituto Politecnico Nacional",
-    "email": "Aqui pon tu correo ",
-    "location": "Somos del Cecyt3",
-    "phone": "y aqui pon tu celular",
+    "footer_description": "Instituto Politécnico Nacional",
+    "email": "vicgab@gmail.com hern04045@gmail.com",
+    "location": "CECyT 3 'Estanislao Ramírez Ruíz'",
+    "phone": "",
     "contact_form_action": "#",
-    "copyright": "Copyright © 2023 proudly crafted by [AlfaDev](https://github.com/diego-alfadev)"
+    "copyright": "Copyright © 2024 desarrollado por IPN [Fikdev]"
 },
 
   "metadata": {
