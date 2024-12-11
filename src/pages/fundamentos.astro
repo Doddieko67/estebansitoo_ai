@@ -3,17 +3,23 @@ import PageHeader from "@/components/core/PageHeader.astro";
 import Base from "@/layouts/Base.astro";
 import { getEntry } from "astro:content";
 
-const features = await getEntry("features", "index");
-const { Content } = await features.render();
+let features;
+try {
+  features = await getEntry("features", "index");
+} catch (e) {
+  console.error("Error loading features:", e);
+}
+
+const Content = features ? (await features.render()).Content : null;
 ---
 
-<Base entry_keys={["features", "index"]}>
+<Base entry_keys={features ? ["features", "index"] : undefined}>
   <section class="py-16">
     <div class="container">
-      <PageHeader page_data={features.data} />
+      {features && <PageHeader page_data={features.data} />}
     </div>
     <div class="container">
-       <Content />
+      {Content && <Content />}
     </div>
   </section>
 </Base>

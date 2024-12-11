@@ -6,18 +6,31 @@ import { markdownify } from "@/lib/utils/textConverter";
 import { getEntry } from "astro:content";
 
 const { logo } = config.site;
-const entry = await getEntry("pages", "404");
-const { Content } = await entry.render();
+
+// Cargar la entrada de contenido de forma segura
+let entry, Content;
+try {
+  entry = await getEntry("pages", "404");
+  if (entry) {
+    Content = (await entry.render()).Content;
+  }
+} catch (error) {
+  console.error("Error loading 404 entry:", error);
+}
+
+// Valores predeterminados en caso de fallo
+const title = entry?.data?.title || "Página no encontrada";
+const description = entry?.data?.description || "Lo sentimos, no pudimos encontrar la página que buscas.";
 ---
 
-<Base entry_keys={["pages", "404"]}>
-  <section class="section">
+<Base entry_keys={entry ? ["pages", "404"] : undefined}>
+    <section class="section">
     <div class="container">
       <div class="flex h-[40vh] items-center justify-center">
         <div class="flex flex-col items-center">
           <Logo showText={false} />
-          <h1 class="mb-4" set:html={markdownify(entry.data.title)} />
-          <Content />
+          <h1 class="mb-4" set:html={markdownify(title)} />
+          {Content ? <Content /> : <p>{description}</p>}
         </div>
       </div>
     </div>

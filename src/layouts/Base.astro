@@ -6,6 +6,8 @@ import { plainify } from "@/lib/utils/textConverter";
 import Footer from "@/layouts/partials/Footer.astro";
 import Header from "@/layouts/partials/Header.astro";
 import "@/styles/main.scss";
+import type { CollectionEntry } from "astro:content";
+
 
 import { AstroFont } from "astro-font";
 import { ViewTransitions } from "astro:transitions";
@@ -41,7 +43,7 @@ export interface Props {
    *
    * @see PageType
    */
-  entry_keys?: [keyof ContentEntryMap, string];
+  entry_keys?: [string, string];
   /**
    * Override <title> og:title and twitter:title
    * @default config.site.title
@@ -85,12 +87,19 @@ const {
 
 let page: PageType | undefined = undefined;
 
-if (entry_keys) {
-  const page_entry = await getEntry(...entry_keys);
-  if (page_entry) {
-    page = page_entry.data as PageType;
+try{
+  if (entry_keys && entry_keys.length === 2) {
+    const page_entry = await getEntry(...entry_keys);
+    if (page_entry) {
+      page = page_entry.data as PageType;
+    } else {
+      console.warn("No entry found for:", entry_keys);
+    }
   }
+} catch(error){
+  console.log("no esta funcionando");
 }
+
 const _title = title
   ? title
   : page?.document_title

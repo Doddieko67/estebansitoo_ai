@@ -2,18 +2,22 @@
 import PageHeader from "@/components/core/PageHeader.astro";
 import Base from "@/layouts/Base.astro";
 import { getEntry } from "astro:content";
-
-const about = await getEntry("about", "index");
+let about
+try{
+  about = await getEntry("about", "index");
+} catch(error) {
+  console.error("Error fetching homepage data:", error);
+  about = null;
+}
 const page_data = {
   ...about.data,
   content: about.body,
 };
 const { Content } = await about.render();
+
 ---
 
-<Base
-  entry_keys={["about", "index"]}
->
+<Base>
   <section class="py-16">
     <div class="container">
       <div class="mx-auto max-w-[768px] text-center">
@@ -23,3 +27,4 @@ const { Content } = await about.render();
     </div>
   </section>
 </Base>
+

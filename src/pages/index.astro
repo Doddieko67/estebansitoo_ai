@@ -3,33 +3,42 @@ import Section from "@/components/core/Section.astro";
 import Features from "@/components/Features.astro";
 import Testimonial from "@/components/Testimonial.astro";
 import Base from "@/layouts/Base.astro";
-import Cta from "@/layouts/partials/Cta.astro";
 import { getEntry } from "astro:content";
 
-const homepage = await getEntry("homepage", "index");
-// console.log(homepage);
-const { banner, sections, features, testimonial } = homepage.data;
-const call_to_action = homepage.data.call_to_action;
----
+let homepage;
 
+try {
+  homepage = await getEntry("homepage", "index");
+} catch (error) {
+  console.error("Error fetching homepage data:", error);
+  homepage = null; // En caso de error, homepage será null
+}
+
+const { 
+  banner = {}, 
+  sections = [], 
+  features = {}, 
+  testimonial = {}, 
+  call_to_action = {} 
+} = homepage?.data || {};
+
+console.log("Homepage content:", { banner, sections, features, testimonial, call_to_action });
+---
 <Base>
-  <!-- banner -->
-  <section class="lg:mb-10 animate-fade-in">
-    <Section section={banner} />
-  </section>
-  <!-- multi section -->
-  {
-    sections && (
-      <section class="multi-section">
-        {sections.map((section) => (
-          <Section section={section} />
-        ))}
-      </section>
-    )
-  }
-  <!-- key features -->
-  <Features features={features} />
-  <!-- testimonial -->
-  <Testimonial testimonial={testimonial} />
-  <!-- call to action -->
+  {banner && Object.keys(banner).length > 0 && (
+    <section class="lg:mb-10 animate-fade-in">
+      <Section section={banner} />
+    </section>
+  )}
+
+  {sections?.length > 0 && (
+    <section class="multi-section">
+      {sections.map((section) => (
+        <Section section={section} />
+      ))}
+    </section>
+  )}
+
+  {features && Object.keys(features).length > 0 && <Features features={features} />}
+  {testimonial && Object.keys(testimonial).length > 0 && <Testimonial testimonial={testimonial} />}
 </Base>
