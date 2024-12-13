@@ -16,7 +16,7 @@ const { title, buttons } = page_data || {};
   <h1 class="mb-5 mt-8" set:html={markdownify(title)} />
   {
     buttons && (
-      <div class="mt-11 justify-center sm:flex">
+      <div class="mt-11 justify-center sm:flex mb-8s">
         {buttons.map((button) => (
           <Button {...button} />
         ))}

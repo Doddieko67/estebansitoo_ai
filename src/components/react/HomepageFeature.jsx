@@ -19,7 +19,7 @@ const HomapageFeature = ({ feature_list }) => {
                 </span>
                 <h3 className="ml-2 break-words text-sm md:text-lg">{item.title}</h3>
               </div>
-              <p className="break-words" dangerouslySetInnerHTML={{__html: markdownify(item.content)}}></p>
+              <p className="break-normal break-words break-keep" dangerouslySetInnerHTML={{__html: markdownify(item.content)}}></p>
             </div>
           </div>
         );

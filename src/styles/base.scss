@@ -2,8 +2,7 @@ body {
   @apply font-primary text-text bg-background bg-[url(/images/bg.svg)] bg-cover bg-repeat;
 }
 .dark body {
-
-  @apply bg-slate-950 bg-[url(/images/bg.svg)] bg-cover bg-repeat;
+  @apply bg-zinc-950 bg-[url(/images/bg.svg)] bg-cover bg-repeat;
 }
 
 h1 {

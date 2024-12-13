@@ -5,6 +5,7 @@ meta_keywords: "Inteligencia artificial, educación inclusiva, fundamentos IA, t
 
 title: "Fundamentos"
 description: "Conoce las tecnologías fundamentales que hacen posible la Inteligencia Artificial y su aplicación en la educación inclusiva."
+
 ---
 
 <Section
@@ -12,30 +13,10 @@ description: "Conoce las tecnologías fundamentales que hacen posible la Intelig
     title: "¿Qué es la Inteligencia Artificial?",
     content:
       "La Inteligencia Artificial (IA) es una rama de la informática que desarrolla sistemas capaces de realizar tareas que normalmente requieren de inteligencia humana. Estas tareas incluyen el razonamiento, el aprendizaje, la toma de decisiones y el procesamiento de datos. En la educación, la IA permite personalizar la enseñanza y facilita la inclusión de estudiantes con discapacidades. <br/><br/> A lo largo de los años, la IA ha mejorado y evolucionado gracias al avance de tecnologías como el aprendizaje automático, el procesamiento del lenguaje natural y las redes neuronales.",
+      image: "/images/image9.png",
+      image_position: "left"
   }}
 />
-
-<div class="row mb-10 lg:mb-20">
-  <div class="col-12 text-sm">
-    ```astro
-    ---
-    title: "Fundamentos de la IA"
-    page_title: "Fundamentos de la Inteligencia Artificial"
-    description: "Explora las bases que hacen posible la IA en la educación inclusiva."
-    show_description: true
-    ---
-
-    <Section
-      section={{
-        title: "¿Qué es la IA?",
-        content:
-          "La Inteligencia Artificial es una disciplina que busca crear sistemas capaces de realizar tareas humanas, como aprender, razonar y tomar decisiones. A través de tecnologías como el aprendizaje automático, se logra personalizar el aprendizaje, facilitando la inclusión en la educación.",
-      }}
-    />
-    ```
-  </div>
-  <p class="text-[0.5rem] text-text">Un ejemplo de cómo puedes organizar los fundamentos de la IA en un archivo Markdown dentro de Astro.</p>
-</div>
 
 <Section
   section={{
@@ -44,31 +25,26 @@ description: "Conoce las tecnologías fundamentales que hacen posible la Intelig
       "Las tecnologías clave en la IA incluyen el aprendizaje automático, las redes neuronales y el procesamiento de lenguaje natural. Estas herramientas permiten que las máquinas reconozcan patrones, aprendan de los datos y tomen decisiones de manera autónoma.",
   }}
 />
+import { Image } from "astro:assets";
 
 <div class="row mb-10 lg:mb-20">
-  <div class="col-12 md:col-6 text-sm py-2">
-      ```json
-      // Ejemplo de configuración de un sistema basado en IA
-      {
-        "algoritmo": "Aprendizaje Automático",
-        "objetivo": "Personalizar el aprendizaje para estudiantes con discapacidades",
-        "datos": "Patrones de comportamiento y preferencias de los estudiantes"
-      }
-      ```
+  <div class="col-12 sm:col-6 text-sm py-2 gap-3">
+    <Image
+      class="h-full object-contain rounded-3xl drop-shadow-[0_0_20px_rgba(var(--primary),0.8)]"
+      alt="section-image"
+      src="/images/image10.png"
+      width={500}
+      height={333}
+    />
   </div>
-  <div class="col-12 md:col-6 py-2">
-        ```html
-        <html lang="es">
-        <head>
-        <!-- Implementación de IA para accesibilidad -->
-        <meta name="description" content="IA aplicada a la educación inclusiva">
-        <title>Fundamentos de la IA</title>
-        </head>
-        <body>
-        <h1>Aplicación de la Inteligencia Artificial en la Educación</h1>
-        </body>
-        </html>
-        ```
+  <div class="col-12 sm:col-6 text-sm py-2">
+    <Image
+      class="h-full object-contain rounded-3xl drop-shadow-[0_0_20px_rgba(var(--primary),0.8)]"
+      alt="section-image"
+      src="/images/image12.jpg"
+      width={500}
+      height={333}
+    />
   </div>
 </div>
 
@@ -79,31 +55,38 @@ description: "Conoce las tecnologías fundamentales que hacen posible la Intelig
   }}
 />
 
-<div class="flex justify-center mb-10 lg:mb-20">
-  <div class="col-12 md:col-6 text-sm py-2">
-      ```ts
-      export interface IAComponent {
-        title: string;
-        description: string;
-        technology: string;
-        application: string;
-      }
+<div class="mb-10 lg:mb-20 mb-10 lg:mb-20">
 
-      export const aiTechnologies: IAComponent[] = [
-        {
-          title: "NLP",
-          description: "Permite a las máquinas comprender y generar lenguaje humano.",
-          technology: "Procesamiento de Lenguaje Natural",
-          application: "Lectores de pantalla y chatbots para estudiantes con discapacidades visuales."
-        },
-        {
-          title: "Machine Learning",
-          description: "Algoritmos que aprenden de los datos para predecir y personalizar experiencias de aprendizaje.",
-          technology: "Aprendizaje Automático",
-          application: "Sistemas que adaptan el ritmo y contenido según las necesidades del estudiante."
-        }
-      ];
-      ```
+<div class="grid grid-cols-2 gap-5 h-auto">
+  <div class="grid grid-rows-2 gap-5 ">
+    <div class="flex items-center">
+      <Image
+        class="w-full object-contain rounded-3xl drop-shadow-[0_0_20px_rgba(var(--primary),0.8)]"
+        alt="section-image"
+        src="/images/image11.jpg"
+        width={500}
+        height={333}
+      />
+    </div>
+    <div>
+      <Image
+        class="w-full object-contain rounded-3xl drop-shadow-[0_0_20px_rgba(var(--primary),0.8)]"
+        alt="section-image"
+        src="/images/image14.jpg"
+        width={500}
+        height={333}
+      />
+    </div>
+  </div>
+    <div class="flex items-center">
+      <Image
+        class="w-full object-contain rounded-3xl drop-shadow-[0_0_20px_rgba(var(--primary),0.8)]"
+        alt="section-image"
+        src="/images/image13.jpg"
+        width={500}
+        height={333}
+      />
+    </div>
   </div>
 </div>
 

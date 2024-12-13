@@ -1,0 +1,54 @@
+---
+interface Props {
+  title: string
+  date: string
+  content: string
+  image: string
+  degree?:string
+  buttons: {
+    label: string
+    href: string
+    target: string
+  }[]
+}
+
+const { title,  date, content, image, buttons, degree = 0} = Astro.props
+import { Image } from "astro:assets";
+console.log(buttons)
+---
+<div class="flex flex-col lg:flex-row">
+    <div class="flex-1 p-4">
+        <Image
+            class="w-full object-contain rounded-3xl drop-shadow-[0_0_20px_rgba(var(--primary),0.8)] rotate-[15{}]"
+            alt="section-image"
+            src={image}
+            width={500}
+            height={333}
+        />
+    </div>
+    <div class="flex-[4] p-4">
+        <div
+        class="relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]"
+        >
+            <div class="relative pb-12 md:col-span-2">
+                <div class="sticky top-0">
+                <span class="text-blue-400 -left-[42px] absolute rounded-full text-5xl">&bull;</span>
+                <h3 class="text-3xl font-bold text-blue-400 text-shadow-[0px_2px_15px] shadow-blue-400/10">{title}</h3>
+                <h4 class="font-semibold text-base text-gray-600 dark:text-gray underline ">{buttons.map((button, index) => (
+                    <a
+                      href={button.href}
+                      target={button.target}
+                    >
+                      {button.label}
+                    </a>
+                  ))}
+                  </h4>
+                <time class="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">{date}</time>
+                </div>
+            </div>
+            <div class="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3">
+                {content}
+            </div>
+        </div>
+    </div>
+</div>

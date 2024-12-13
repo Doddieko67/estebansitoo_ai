@@ -56,6 +56,7 @@ export default defineConfig({
         "@/components/core/Section.astro",
         "@/components/react/Changelog.tsx",
         "@/components/Badge.astro",
+        "astro:assets"
       ],
     }),
     mdx()

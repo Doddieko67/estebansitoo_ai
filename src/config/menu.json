@@ -11,6 +11,10 @@
     {
       "name": "Beneficios",
       "url": "/beneficios"
+    },
+    {
+      "name": "Fundaciones",
+      "url": "/fundaciones"
     }
   ]
 }

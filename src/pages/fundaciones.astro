@@ -1,0 +1,69 @@
+---
+import ExperienceItem from "@/components/fundItem.astro"
+
+import Base from "@/layouts/Base.astro";
+
+let fundaciones, image;
+image = "/images/image9.png"
+
+const FUNDACIONES = [
+  {
+    title: "Universidad Iberoamericana",
+    date: "2024",
+    content: "Investigadores de esta institución están desarrollando interfaces cerebro-computadora que emplean IA para ayudar a personas con discapacidades severas a comunicarse, mejorando su autonomía y calidad de vida.",
+    image: "/images/ibero.jpg",
+    degree: 15,
+    buttons: [
+      {
+        label: "Más información",
+        href: "https://ibero.mx/prensa/estudio-ia-ayudaria-personas-con-discapacidad-severa-comunicarse?utm_source",
+        target: "_blank"
+      }
+    ]
+  },
+  {
+    title: "Alianza Nacional de Inteligencia Artificial (ANIA)",
+    date: "2023",
+    content: "Esta organización promueve el uso ético y responsable de la IA en México, incluyendo su aplicación en la inclusión de personas con discapacidad. Trabajan en colaboración con diversos sectores para diseñar políticas públicas y modelos de gobernanza que integren la IA de manera inclusiva.",
+    image: "/images/ania.jpg",
+    buttons: [
+      {
+        label: "Más información",
+        href: "https://www.ania.org.mx/",
+        target: "_blank"
+      }
+    ]
+  },
+  {
+    title: "Fundación Teletón México",
+    date: "2022",
+    content: "Aunque no se especifica su uso de IA, Teletón implementa diversas tecnologías para brindar atención de calidad a niñas, niños y adolescentes con discapacidad, autismo y cáncer.",
+    image: "/images/teleton.jpg",
+    buttons: [
+      {
+        label: "Más información",
+        href: "https://teleton.org/",
+        target: "_blank"
+      }
+    ]
+  }
+];
+---
+<Base>
+    <section class="section">
+        <div class="container px-4 sm:px-8 lg:px-16">
+            <ol class="relative my-16">
+                {
+                  FUNDACIONES.map((experience) => (
+                    <li class="">
+                      <ExperienceItem {...experience} />
+                    </li>
+                  ))
+                }
+            </ol>
+            <div class="mb">
+                La inteligencia artificial está transformando el mundo a nuestro alrededor, y en México ya estamos viendo cómo puede marcar una diferencia real en la vida de las personas. Desde herramientas que facilitan la comunicación para quienes enfrentan discapacidades hasta iniciativas que buscan incluir a todos en el progreso tecnológico, la IA no es solo una herramienta, es una oportunidad para construir un futuro más justo y accesible.
+            </div>
+        </div>
+    </section>
+</Base>
